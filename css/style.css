@@ -1,0 +1,278 @@
+:root {
+  --stitching-color: #87766a; 
+}
+
+@font-face {
+  src: url(Fonts/Bleeding_Cowboys.ttf);
+  font-family: west1;
+}
+@font-face {
+  src: url(Fonts/SHADSER.TTF);
+  font-family: west2;
+}
+@font-face {
+  src: url(Fonts/Boots&Spurs_personal_use_only.ttf);
+  font-family: west3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+}
+
+/* Utility */
+.container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.text-primary {
+  color: #b20000;
+  font-family: west3;
+  font-size: 1.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  background: #0000b2;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.header {
+  background: #371b07;
+  border: #87766a dashed 2px;
+  margin: 1.6rem;
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pd-1 {padding: 1rem;}
+.pd-2 {padding: 2rem;}
+.pd-3 {padding: 3rem;}
+
+/* navbar */
+#navbar {
+display: flex;
+background: #371b07;
+color: #000;
+position: sticky;
+top: 0;
+height: 80px;
+justify-content: space-between;
+align-items: center;
+opacity: .9;
+z-index: 2;
+}
+
+#navbar p {
+  font-family: west3;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 1rem;
+  padding: 0 7px;
+  padding-top: 5px;
+  border: var(--stitching-color) dashed 2px;
+  border-radius: 5px;
+}
+
+#navbar p a {
+  text-decoration: none;
+  color: #b20000;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a,
+#navbar h1 a {
+  text-decoration: none;
+  margin: 5px 0.3rem;
+  padding: 1.2rem 1rem;
+  color: #b20000;
+  border: var(--stitching-color) dashed 2px;
+  border-radius: 5px;
+  font-family: west3;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #d5d670;
+  border: var(--stitching-color) dashed 2px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Showcase */
+#showcase {
+  background: rgba(0, 0, 0, 0.4);
+  height: 90vh;
+  position: relative;
+}
+
+#showcase:before {
+  content: '';
+  background: url(../img/Showcase.jpg)
+  no-repeat center center/cover ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+}
+#showcase .text-primary {
+  font-size: 2rem;
+}
+
+#showcase p {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+
+/* Gallery */
+#gallery {
+  position: relative;
+}
+
+.gallery-img {
+display: flex;
+flex-direction: column;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
+}
+
+.gallery-img .img {
+  padding: 1rem;
+}
+
+#gallery .btn {
+  align-items: center;
+  justify-content: center;
+
+}
+
+#gallery a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 1.5rem;
+  margin-left: 45.5%;
+}
+
+/* About Page */
+.background {
+  background: url(../img/Showcase.jpg)
+  no-repeat center center/cover;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 7%;
+  width: 100%;
+  height: 205px;
+  top: 80px;
+  left: 0;
+  z-index: -1;
+}
+
+.about {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  /* height: 400px; */
+}
+
+.about-text {
+  display: flex;
+  color: #fff;
+  width: 500px;
+  font-weight: 200;
+  border-radius: 15px;
+  border: var(--stitching-color) dashed 3px;
+  margin: 4rem 0;
+  margin-left: 4rem;
+  padding: 3rem;
+}
+#about .about .photo {
+ display: flex;
+ margin-left: 250px;
+}
+
+#about .about .photo img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* Contact Page */
+#contact-info {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  border: var(--stitching-color) solid 2px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 200px;
+  width: 7rem;
+  margin: 3rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.box h3 {
+  padding-left: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}

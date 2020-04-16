@@ -1,0 +1,98 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+
+/* Utility */
+.header {
+  width: 200px;
+}
+
+.text-primary {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+}
+
+/* Navbar */
+#navbar {
+  height: 100px;
+}
+
+#navbar ul,
+#navbar img {
+  display: none;
+}
+
+#navbar p {
+  padding: 0 7px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+/* Showcase */
+#showcase .text-primary {
+  font-size: 2.7rem;
+}
+
+/* Gallery */
+#gallery p {
+font-size: 2rem;
+}
+
+#gallery a {
+  margin-left: 30%;
+}
+
+/* About Page */
+#about .about-text {
+  order: 2;
+  margin-top: 20px;
+  margin: 0 20px;
+  padding: 20px;
+  width: 270px;
+}
+
+.page-header p {
+  padding-top: 0;
+  font-size: 50px;
+}
+
+.about {
+  flex-direction: column;
+}
+
+#about .about .photo {
+  /* display: none; */
+  order: 1;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  margin-left: 0;
+  margin: 60px 0;
+}
+
+#about .about .photo img {
+  height: 250px;
+  width: 250px;
+}
+
+/* Contact Page */
+.about-background p {
+  font-size: 2.2rem;
+  padding-top: 0;
+}
+
+#contact-info {
+  flex-direction: column;
+}
+
+#contact-info .box {
+  text-align: center;
+}
+
+#contact-info .box h3 {
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 1rem;
+}
